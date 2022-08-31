@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/reset.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/public/assets/css/modal.css">
+    <link rel="stylesheet" href="/public/assets/css/shared-classes.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/public/assets/css/home.css">
+    <title>Página de Recados</title>
+</head>
+
+<body>
+    <section class="modal">
+        <article class="modal__box">
+            <header class="modal__header">
+                <p class="modal__title">
+                    Aviso
+                </p>
+                <span class="material-symbols-rounded modal__close-btn">
+                    close
+                </span>
+            </header>
+            <article class="modal__text-area">
+                <p class="modal__text">
+
+                </p>
+            </article>
+            <article class="modal__btn-area">
+                <button class="modal__btn">
+                    Cancelar
+                </button>
+                <button class="modal__btn">
+                    Ok
+                </button>
+            </article>
+        </article>
+    </section>
+    <section id="notes-modal">
+        <article id="notes-modal__box">
+            <form id="notes-modal__form">
+                <input type="text" placeholder="Título" autofocus value="" id="notes-modal__title-input">
+                <input type="text" placeholder="Descrição" autofocus value="" id="notes-modal__description-input">
+                <input type="submit" value="Salvar" id="notes-modal__submit-input">
+            </form>
+        </article>
+    </section>
+    <header id="header">
+        <p id="header__title">
+            Meus Recados
+        </p>
+        <span class="material-symbols-rounded" id="header__logout-btn">
+            logout
+        </span>
+    </header>
+    <main class="container">
+        <button id="add-btn">
+            <span class="material-symbols-rounded" id="add-btn--icon">
+                add
+            </span>
+        </button>
+        <table id="table">
+            <tr id="table__row">
+                <th class="table__header-cell">
+                    Título
+                </th>
+                <th class="table__header-cell">
+                    Descrição
+                </th>
+                <th class="table__header-cell">
+                    Ações
+                </th>
+            </tr>
+        </table>
+    </main>
+    <script src="/public/assets/js/local-storage-functions.js"></script>
+    <script src="/public/assets/js/modal.js"></script>
+    <script src="/public/assets/js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/reset.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/public/assets/css/modal.css">
+    <link rel="stylesheet" href="/public/assets/css/pop-over.css">
+    <link rel="stylesheet" href="/public/assets/css/shared-classes.css">
+    <title>Página de Recados</title>
+</head>
+
+<body>
+    <section class="modal">
+        <article class="modal__box">
+            <header class="modal__header">
+                <p class="modal__title">
+                    Aviso
+                </p>
+                <span class="material-symbols-rounded modal__close-btn">
+                    close
+                </span>
+            </header>
+            <article class="modal__text-area">
+                <p class="modal__text">
+
+                </p>
+            </article>
+            <article class="modal__btn-area">
+                <button class="modal__btn">
+                    Cancelar
+                </button>
+                <button class="modal__btn">
+                    Ok
+                </button>
+            </article>
+        </article>
+    </section>
+    <section id="pop-over">
+        <p id="pop-over__text">
+
+        </p>
+    </section>
+    <main class="container">
+        <section class="box">
+            <article class="card">
+                <h1 class="card__title">
+                    Cadastro
+                </h1>
+                <form class="card__form">
+                    <input type="email" placeholder="E-mail" autofocus value="" class="form__inputs"
+                        id="form__email-register">
+                    <input type="password" placeholder="Senha" value="" class="form__inputs"
+                        id="form__password-register">
+                    <input type="password" placeholder="Repita a senha" value="" class="form__inputs"
+                        id="form__repassword-register">
+                    <input type="submit" placeholder="" value="Cadastrar" class="form__submit-input"
+                        id="form__submit-register">
+                </form>
+                <p class="card__text">
+                    Já possui uma conta? <a href="login.html" class="card__text--link">Conecte-se!</a>
+                </p>
+            </article>
+        </section>
+    </main>
+    <script src="/public/assets/js/local-storage-functions.js"></script>
+    <script src="/public/assets/js/modal.js"></script>
+    <script type="module" src="/public/assets/js/validate-register.js"></script>
+    <script type="module" src="/public/assets/js/register.js"></script>
+</body>
+
+</html>
