@@ -39,10 +39,10 @@
                 </p>
             </article>
             <article class="modal__btn-area">
-                <button class="modal__btn">
+                <button class="modal__btn" id="modal__cancel-btn">
                     Cancelar
                 </button>
-                <button class="modal__btn">
+                <button class="modal__btn" id="modal__ok-btn">
                     Ok
                 </button>
             </article>
@@ -50,11 +50,11 @@
     </section>
     <section id="notes-modal">
         <article id="notes-modal__box">
-            <form id="notes-modal__form">
+            <div id="notes-modal__form">
                 <input type="text" placeholder="Título" autofocus value="" id="notes-modal__title-input">
                 <input type="text" placeholder="Descrição" autofocus value="" id="notes-modal__description-input">
-                <input type="submit" value="Salvar" id="notes-modal__submit-input">
-            </form>
+                <button onclick="addNotes()" type="button" id="notes-modal__submit-input">Salvar</button>
+            </div>
         </article>
     </section>
     <header id="header">
@@ -72,17 +72,22 @@
             </span>
         </button>
         <table id="table">
-            <tr id="table__row">
-                <th class="table__header-cell">
-                    Título
-                </th>
-                <th class="table__header-cell">
-                    Descrição
-                </th>
-                <th class="table__header-cell">
-                    Ações
-                </th>
-            </tr>
+            <thead>
+                <tr id="table__row">
+                    <th class="table__header-cell">
+                        Título
+                    </th>
+                    <th class="table__header-cell">
+                        Descrição
+                    </th>
+                    <th class="table__header-cell">
+                        Ações
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table__body">
+
+            </tbody>
         </table>
     </main>
     <script src="/public/assets/js/local-storage-functions.js"></script>
